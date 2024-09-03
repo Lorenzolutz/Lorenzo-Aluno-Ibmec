@@ -1,0 +1,32 @@
+C++: Uma evolução da linguagem C, C++ é conhecida por sua eficiência e controle de baixo nível. É amplamente utilizada em desenvolvimento de software de sistema, jogos e aplicações de alto desempenho devido à sua capacidade de manipular hardware e memória diretamente.Python: Uma linguagem de alto nível que prioriza a simplicidade e a legibilidade do código. É versátil e usada em uma ampla gama de aplicações, desde análise de dados e visualização até desenvolvimento web e automação, destacando-se pela facilidade de uso e uma vasta gama de bibliotecas.Java: Desenvolvida pela Oracle, Java é uma linguagem de alto nível famosa por sua portabilidade, permitindo que o código seja executado em qualquer plataforma que suporte a Java Virtual Machine (JVM). É amplamente utilizada para desenvolvimento de aplicativos web e corporativos, oferecendo robustez e segurança. Disponível em:https://www.hostinger.com.br/tutoriais/linguagens-de-programacao-mais-usadas#1_Python
+código java: public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+código python: print("Hello, World!")
+código c++: #include <iostream>
+
+int main() {
+    std::cout << "Hello, World!" << std::endl;
+    return 0;
+}
+código próprio: import java.util.Scanner;
+
+public class SumOfNumbers {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Quantos números você deseja somar? ");
+        int count = scanner.nextInt();
+        
+        int sum = 0;
+        for (int i = 0; i < count; i++) {
+            System.out.print("Digite o número " + (i + 1) + ": ");
+            int number = scanner.nextInt();
+            sum += number;
+        }
+
+        System.out.println("A soma dos números é: " + sum);
+    }
+}
