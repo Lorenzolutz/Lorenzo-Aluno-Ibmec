@@ -1,0 +1,70 @@
+aula 7 :
+
+Função que imprima as informações de três parâmetros: nome, idade, e cidade, de maneira formatada:
+def imprimir_informacoes(nome, idade, cidade):
+    print("Nome:", nome, sep=" ", end=" | ")
+    print("Idade:", idade, sep=" ", end=" | ")
+    print("Cidade:", cidade)
+
+Função  que peça ao usuário dois números e a operação desejada ('+', '-', '*' ou '/'):
+def calculadora():
+    # Pede os números ao usuário
+    num1 = float(input("Digite o primeiro número: "))
+    num2 = float(input("Digite o segundo número: "))
+    
+    # Pede a operação desejada
+    operacao = input("Digite a operação desejada ('+', '-', '*' ou '/'): ")
+
+    # Dicionário para mapear operações
+    operacoes = {
+        '+': num1 + num2,
+        '-': num1 - num2,
+        '*': num1 * num2,
+        '/': num1 / num2 if num2 != 0 else "Erro: Divisão por zero!"
+    }
+    
+    # Verifica se a operação é válida e imprime o resultado
+    resultado = operacoes.get(operacao, "Operação inválida!")
+    print("Resultado:", resultado)
+
+a função que peça ao usuário para digitar itens de uma lista de compras, separados por vírgula:
+def lista_de_compras():
+    # Pede ao usuário para digitar os itens, separados por vírgula
+    entrada = input("Digite os itens da lista de compras, separados por vírgula: ")
+    
+    # Armazena os itens em uma lista, removendo espaços extras
+    itens = entrada.split(',')
+    
+    # Imprime cada item em uma linha separada
+    print("\nItens da lista de compras:")
+    for item in itens:
+        print(item.strip())
+
+Função o que solicite ao usuário a temperatura em graus Celsius, converta-a para Fahrenheit e imprima o resultado:
+def celsius_para_fahrenheit():
+    # Solicita ao usuário a temperatura em graus Celsius
+    celsius = float(input("Digite a temperatura em graus Celsius: "))
+    
+    # Converte Celsius para Fahrenheit
+    fahrenheit = (celsius * 9/5) + 32
+    
+    # Imprime o resultado
+    print(f"A temperatura em graus Fahrenheit é: {fahrenheit:.2f}")
+
+Função que continue a pedir ao usuário para digitar nomes até que o nome 'sair' seja digitado:
+def coletar_nomes():
+    nomes = []  # Lista para armazenar os nomes
+    
+    while True:
+        nome = input("Digite um nome (ou 'sair' para encerrar): ")
+        
+        if nome.lower() == 'sair':
+            break  # Encerra o loop se o usuário digitar 'sair'
+        
+        nomes.append(nome)  # Adiciona o nome à lista
+    
+    # Imprime todos os nomes digitados
+    print("\nNomes digitados:")
+    for nome in nomes:
+        print(nome)
+
